@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_index_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:scaleType="center"
+        android:src="@drawable/pic_index_logo" />
+
+    <LinearLayout
+        android:id="@+id/welcome_linear_ctrlbar"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_welcome_ctrlbar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/welcome_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="9dip"
+            android:background="@drawable/btn_bottombar"
+            android:gravity="center"
+            android:text="@string/welcome_btn_login"
+            android:textColor="@color/profile_bottom_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/welcome_linear_ctrlbar"
+        android:text="@string/aboutus_copyright"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>
